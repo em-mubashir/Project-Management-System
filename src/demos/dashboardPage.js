@@ -68,72 +68,72 @@ export const productsData = [
 export const avatarsData = [
   {
     avatar: user1Image,
-    name: 'Tom',
+    name: 'Ali',
     date: '3 month ago',
   },
   {
     avatar: user2Image,
-    name: 'Jenny',
+    name: 'Jamal',
     date: '1 year ago',
   },
   {
     avatar: user3Image,
-    name: 'Sim',
+    name: 'Kamran',
     date: '2 hour ago',
   },
   {
     avatar: user4Image,
-    name: 'Christine',
+    name: 'Hassan',
     date: 'a month ago',
   },
   {
     avatar: user5Image,
-    name: 'Bread',
+    name: 'Sana',
     date: '6 months ago',
   },
   {
     avatar: user6Image,
-    name: 'Dan',
+    name: 'Shahmeer',
     date: '2 years ago',
   },
   {
     avatar: user7Image,
-    name: 'Merry',
+    name: 'Faisal',
     date: '3 month ago',
   },
   {
     avatar: user8Image,
-    name: 'John',
+    name: 'Jamshed',
     date: '1 month ago',
   },
   {
     avatar: user9Image,
-    name: 'Shane',
+    name: 'zia',
     date: '7 month ago',
   },
   {
     avatar: user10Image,
-    name: 'Star',
+    name: 'waqar',
     date: '1 year ago',
   },
   {
     avatar: user11Image,
-    name: 'Jenny',
+    name: 'anas',
     date: '3 month ago',
   },
   {
     avatar: user12Image,
-    name: 'Park',
+    name: 'Anwar',
     date: '4 month ago',
   },
   {
     avatar: user13Image,
-    name: 'Dave',
+    name: 'Usama',
     date: '9 month ago',
   },
   {
     avatar: user14Image,
-    name: 'Jackson',
+    name: 'Saad',
     date: '10 month ago',
   },
 ];
@@ -141,37 +141,37 @@ export const avatarsData = [
 export const userProgressTableData = [
   {
     avatar: user1Image,
-    name: 'Tom',
+    name: 'Ali',
     date: '3 month ago',
     progress: 75,
   },
   {
     avatar: user2Image,
-    name: 'Jenny',
+    name: 'Jamal',
     date: '1 year ago',
     progress: 60,
   },
   {
     avatar: user3Image,
-    name: 'Sim',
+    name: 'Kamran',
     date: '2 hour ago',
     progress: 50,
   },
   {
     avatar: user4Image,
-    name: 'Christine',
+    name: 'Hassan',
     date: 'a month ago',
     progress: 40,
   },
   {
     avatar: user5Image,
-    name: 'Bread',
+    name: 'Sana',
     date: '6 months ago',
     progress: 30,
   },
   {
     avatar: user6Image,
-    name: 'Dan',
+    name: 'Shahmeer',
     date: '2 years ago',
     progress: 25,
   },
@@ -181,7 +181,7 @@ export const supportTicketsData = [
   {
     id: 1,
     avatar: user1Image,
-    name: 'Sim',
+    name: 'Ali',
     date: '30 mins ago',
     text:
       'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
@@ -190,7 +190,7 @@ export const supportTicketsData = [
   {
     id: 2,
     avatar: user2Image,
-    name: 'Jane',
+    name: 'Jamal',
     date: '1 hour ago',
     text:
       'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',
@@ -199,7 +199,7 @@ export const supportTicketsData = [
   {
     id: 3,
     avatar: user3Image,
-    name: 'Tom',
+    name: 'Kamran',
     date: 'yesterday',
     text:
       'Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy nibh euismod tinciduntut laoreet doloremagna aliquam erat volutpat.',

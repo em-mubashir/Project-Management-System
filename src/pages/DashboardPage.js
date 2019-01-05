@@ -23,7 +23,6 @@ import {
   MdPersonPin,
 } from 'react-icons/lib/md';
 
-import InfiniteCalendar from 'react-infinite-calendar';
 
 import { Line, Bar } from 'react-chartjs-2';
 
@@ -144,6 +143,10 @@ class DashboardPage extends React.Component {
                 <td><Badge color="success" className="mr-1">Completed</Badge></td>
                 <td><Badge color="success" pill className="mr-1">100%</Badge></td>
                 </tr>
+            
+
+
+          
                 <tr>
                 <th scope="row">3</th>
                 <td>Google</td>

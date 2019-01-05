@@ -23,7 +23,7 @@ import {
   MdPersonPin,
 } from 'react-icons/lib/md';
 
-import InfiniteCalendar from 'react-infinite-calendar';
+
 
 import { Line, Bar } from 'react-chartjs-2';
 
@@ -45,14 +45,8 @@ import { AnnouncementCard, TodosCard } from 'components/Card';
 
 import { NumberWidget} from 'components/Widget';
 
-import MapWithBubbles from 'components/MapWithBubbles';
 
-const today = new Date();
-const lastWeek = new Date(
-  today.getFullYear(),
-  today.getMonth(),
-  today.getDate() - 7
-);
+
 class ClientDashboard extends React.Component {
   componentDidMount() {
     // this is needed, because InfiniteCalendar forces window scroll
@@ -69,7 +63,7 @@ class ClientDashboard extends React.Component {
         title="Client"
         breadcrumbs={[{ name: 'Dashboard', active: true }]}>
         <Row>
-          <Col lg={3} md={6} sm={6} xs={12}>
+          <Col lg={6} md={12} sm={12} xs={12}>
             <NumberWidget
               title="Total Projects"
               number="9.8k"
@@ -80,9 +74,9 @@ class ClientDashboard extends React.Component {
             />
           </Col>
 
-          <Col lg={3} md={6} sm={6} xs={12}>
+          <Col lg={6} md={12} sm={12} xs={12}>
             <NumberWidget
-              title="Upcoming"
+              title="Delivered"
               number="5,400"
               color="secondary"
               progress={{
@@ -91,27 +85,6 @@ class ClientDashboard extends React.Component {
             />
           </Col>
 
-          <Col lg={3} md={6} sm={6} xs={12}>
-            <NumberWidget
-              title="Delivered"
-              number="3,400"
-              color="secondary"
-              progress={{
-                value: 90,
-              }}
-            />
-          </Col>
-
-          <Col lg={3} md={6} sm={6} xs={12}>
-            <NumberWidget
-              title="Failed"
-              number="38%"
-              color="secondary"
-              progress={{
-                value: 60,
-              }}
-            />
-          </Col>
         </Row>
               <Row>
               <Col>
@@ -174,98 +147,12 @@ class ClientDashboard extends React.Component {
             </Col>
               </Row>
         <Row>
-          <Col lg="8" md="12" sm="12" xs="12">
-            <Card>
-              <CardHeader>
-                Total Revenue{' '}
-                <small className="text-muted text-capitalize">This year</small>
-              </CardHeader>
-              <CardBody>
-                <Line data={chartjs.line.data} options={chartjs.line.options} />
-              </CardBody>
-            </Card>
-          </Col>
-
-          <Col lg="4" md="12" sm="12" xs="12">
-            <Card>
-              <CardHeader>Total Expense</CardHeader>
-              <CardBody>
-                <Bar data={chartjs.bar.data} options={chartjs.bar.options} />
-              </CardBody>
-              <ListGroup flush>
-                <ListGroupItem>
-                  <MdInsertChart size={25} color={primaryColor} /> Cost of sales{' '}
-                  <Badge color="secondary">$3000</Badge>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <MdBubbleChart size={25} color={primaryColor} /> Management
-                  costs <Badge color="secondary">$1200</Badge>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <MdShowChart size={25} color={primaryColor} /> Financial costs{' '}
-                  <Badge color="secondary">$800</Badge>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <MdPieChart size={25} color={primaryColor} /> Other operating
-                  costs <Badge color="secondary">$2400</Badge>
-                </ListGroupItem>
-              </ListGroup>
-            </Card>
-          </Col>
-        </Row>
-
-        
-
-        <Row>
-          <Col md="6" sm="12" xs="12">
-            <Card>
-              <CardHeader>New Products</CardHeader>
-              <CardBody>
-                {productsData.map(
-                  ({ id, image, title, description, right }) => (
-                    <ProductMedia
-                      key={id}
-                      image={image}
-                      title={title}
-                      description={description}
-                      right={right}
-                    />
-                  )
-                )}
-              </CardBody>
-            </Card>
-          </Col>
-
-          <Col md="6" sm="12" xs="12">
-            <Card>
-              <CardHeader>New Developers</CardHeader>
-              <CardBody>
-                <UserProgressTable
-                  headers={[
-                    <MdPersonPin size={25} />,
-                    'name',
-                    'date',
-                    'participation',
-                    '%',
-                  ]}
-                  usersData={userProgressTableData}
-                />
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-
-     
-
-        
-
-        <Row>
           <Col lg="4" md="12" sm="12" xs="12">
             <AnnouncementCard
               color="gradient-secondary"
               header="Announcement"
               avatarSize={60}
-              name="Jamy"
+              name="Sana"
               date="1 hour ago"
               text="Lorem ipsum dolor sit amet,consectetuer edipiscing elit,sed diam nonummy euismod tinciduntut laoreet doloremagna"
               buttonProps={{

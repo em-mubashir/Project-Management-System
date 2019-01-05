@@ -1,4 +1,4 @@
-import logo200Image from 'assets/img/logo/logo_200.png';
+import logo200Image from 'assets/img/logo/logo.jpeg';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
@@ -56,7 +56,7 @@ class AuthForm extends React.Component {
             <img
               src={logo200Image}
               className="rounded"
-              style={{ width: 60, height: 60, cursor: 'pointer' }}
+              style={{ width: 160, height: 60, cursor: 'pointer' }}
               alt="logo"
               onClick={onLogoClick}
             />
@@ -87,7 +87,10 @@ class AuthForm extends React.Component {
           size="lg"
           className="bg-gradient-theme-left border-0"
           block
-          onClick={this.handleSubmit}>
+          onClick={()=>
+            window.location = '../pages/DashboardPage.js'
+          }
+          >
           {this.renderButtonText()}
         </Button>
 

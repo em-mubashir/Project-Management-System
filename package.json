@@ -1,9 +1,9 @@
 {
-  "name": "react-reduction",
+  "name": "react-admin",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://reduction-admin.github.io/react-reduction",
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.3",
     "@material-ui/core": "^3.7.1",
     "bootstrap": "4.1.1",
     "chart.js": "^2.7.2",
@@ -20,10 +20,12 @@
     "react-icons": "^2.2.7",
     "react-infinite-calendar": "^2.3.1",
     "react-notification-system": "^0.2.17",
+    "react-real-time-form-validation": "^1.0.8",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-simple-maps": "^0.12.1",
     "react-sizeme": "^2.5.2",
+    "react-tabs": "^2.3.0",
     "react-transition-group": "^2.3.1",
     "reactstrap": "^6.1.0",
     "victory": "^0.27.1"
@@ -33,6 +35,7 @@
     "node-sass-chokidar": "^1.3.0",
     "npm-run-all": "^4.1.3",
     "react-scripts": "1.1.4",
+    "react-social-icons": "^3.1.0",
     "serve": "^9.1.0",
     "stylelint": "^9.3.0",
     "stylelint-config-recommended-scss": "^3.2.0",

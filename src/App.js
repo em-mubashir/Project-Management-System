@@ -1,26 +1,28 @@
 import { STATE_LOGIN, STATE_SIGNUP } from 'components/AuthForm';
 import GAListener from 'components/GAListener';
-import { EmptyLayout, LayoutRoute, MainLayout } from 'components/Layout';
-import AlertPage from 'pages/AlertPage';
+import { EmptyLayout, LayoutRoute, MainLayout, clientLayout } from 'components/Layout';
 import AuthModalPage from 'pages/AuthModalPage';
 import AuthPage from 'pages/AuthPage';
-import BadgePage from 'pages/BadgePage';
-import ButtonGroupPage from 'pages/ButtonGroupPage';
-import ButtonPage from 'pages/ButtonPage';
-import CardPage from 'pages/CardPage';
-import ChartPage from 'pages/ChartPage';
 // pages
+import landingPage from 'pages/landingPage';
 import DashboardPage from 'pages/DashboardPage';
 import DashboardDeveloper from 'pages/DashboardDeveloper';
 import ClientDashboard from 'pages/ClientDashboard';
-import DropdownPage from 'pages/DropdownPage';
-import FormPage from 'pages/FormPage';
-import InputGroupPage from 'pages/InputGroupPage';
-import ModalPage from 'pages/ModalPage';
-import ProgressPage from 'pages/ProgressPage';
-import TablePage from 'pages/TablePage';
-import TypographyPage from 'pages/TypographyPage';
-import WidgetPage from 'pages/WidgetPage';
+import ManagerDashboard from 'pages/ManagerDashboard';
+import people from 'pages/people';
+import stickynotes from 'pages/stickynotes';
+import projects from 'pages/projects';
+import tickets from 'pages/tickets';
+import invoice from 'pages/invoice';
+import notification from 'pages/notification';
+import milestones from 'pages/milestones';
+import order from 'pages/order';
+import viewinvoice from 'pages/viewinvoice';
+import generateTickets from 'pages/generateTickets';
+import managerProjects from 'pages/managerProjects';
+import developerNotification from 'pages/developerNotification';
+import developerMilestones from 'pages/developerMilestones';
+
 import React from 'react';
 import componentQueries from 'react-component-queries';
 import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
@@ -71,96 +73,105 @@ class App extends React.Component {
             layout={MainLayout}
             component={DashboardDeveloper}
           />
+         
+            <LayoutRoute
+            exact
+            path="/ManagerDashboard"
+            layout={MainLayout}
+            component={ManagerDashboard}
+          />
           <LayoutRoute
             exact
             path="/ClientDashboard"
             layout={MainLayout}
             component={ClientDashboard}
           />
-            <LayoutRoute
-              exact
-              path="/buttons"
-              layout={MainLayout}
-              component={ButtonPage}
-            />
-            <LayoutRoute
-              exact
-              path="/cards"
-              layout={MainLayout}
-              component={CardPage}
-            />
-            <LayoutRoute
-              exact
-              path="/widgets"
-              layout={MainLayout}
-              component={WidgetPage}
-            />
-            <LayoutRoute
-              exact
-              path="/typography"
-              layout={MainLayout}
-              component={TypographyPage}
-            />
-            <LayoutRoute
-              exact
-              path="/alerts"
-              layout={MainLayout}
-              component={AlertPage}
-            />
-            <LayoutRoute
-              exact
-              path="/tables"
-              layout={MainLayout}
-              component={TablePage}
-            />
-            <LayoutRoute
-              exact
-              path="/badges"
-              layout={MainLayout}
-              component={BadgePage}
-            />
-            <LayoutRoute
-              exact
-              path="/button-groups"
-              layout={MainLayout}
-              component={ButtonGroupPage}
-            />
-            <LayoutRoute
-              exact
-              path="/dropdowns"
-              layout={MainLayout}
-              component={DropdownPage}
-            />
-            <LayoutRoute
-              exact
-              path="/progress"
-              layout={MainLayout}
-              component={ProgressPage}
-            />
-            <LayoutRoute
-              exact
-              path="/modals"
-              layout={MainLayout}
-              component={ModalPage}
-            />
-            <LayoutRoute
-              exact
-              path="/forms"
-              layout={MainLayout}
-              component={FormPage}
-            />
-            <LayoutRoute
-              exact
-              path="/input-groups"
-              layout={MainLayout}
-              component={InputGroupPage}
-            />
-            <LayoutRoute
-              exact
-              path="/charts"
-              layout={MainLayout}
-              component={ChartPage}
-            />
+          <LayoutRoute
+            exact
+            path="/people"
+            layout={MainLayout}
+            component={people}
+          />
+          <LayoutRoute
+            exact
+            path="/landingPage"
+            layout={EmptyLayout}
+            component={landingPage}
+          />
+          <LayoutRoute
+            exact
+            path="/stickynotes"
+            layout={MainLayout}
+            component={stickynotes}
+          />
+          <LayoutRoute
+            exact
+            path="/projects"
+            layout={MainLayout}
+            component={projects}
+          />
+          <LayoutRoute
+            exact
+            path="/tickets"
+            layout={MainLayout}
+            component={tickets}
+          />
+          <LayoutRoute
+          exact
+          path="/invoice"
+          layout={MainLayout}
+          component={invoice}
+        />
+        <LayoutRoute
+        exact
+        path="/notification"
+        layout={MainLayout}
+        component={notification}
+        />
+        <LayoutRoute
+        exact
+        path="/milestones"
+        layout={MainLayout}
+        component={milestones}
+        />
+
+        <LayoutRoute
+        exact
+        path="/order"
+        layout={MainLayout}
+        component={order}
+        />
+        <LayoutRoute
+        exact
+        path="/viewinvoice"
+        layout={MainLayout}
+        component={viewinvoice}
+        />
+        <LayoutRoute
+        exact
+        path="/generateTickets"
+        layout={MainLayout}
+        component={generateTickets}
+        />
+        <LayoutRoute
+        exact
+        path="/managerProjects"
+        layout={MainLayout}
+        component={managerProjects}
+        />
+        <LayoutRoute
+        exact
+        path="/developerNotification"
+        layout={MainLayout}
+        component={developerNotification}
+        />
+        <LayoutRoute
+        exact
+        path="/developerMilestones"
+        layout={MainLayout}
+        component={developerMilestones}
+        />
+       
             <LayoutRoute
               exact
               path="/register"

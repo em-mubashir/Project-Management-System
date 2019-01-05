@@ -159,7 +159,9 @@ class Header extends React.Component {
                     <ListGroupItem tag="button" action className="border-light">
                       <MdHelp /> Help
                     </ListGroupItem>
-                    <ListGroupItem tag="button" action className="border-light">
+                    <ListGroupItem tag="button" action className="border-light" onClick={()=>
+                      window.location = '../login'
+                    }>
                       <MdExitToApp /> Signout
                     </ListGroupItem>
                   </ListGroup>
