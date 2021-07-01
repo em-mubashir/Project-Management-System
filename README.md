@@ -1,7 +1,7 @@
 React admin dashboard template with bootstrap
 
 ## Quick Start
-
+## New Comment Added
 1.  Clone the repo `git clone https://github.com/technotasks/Project-Management-System.git`
 2.  Go to your project folder from your terminal
 3.  Run: `npm install` or `yarn install`
